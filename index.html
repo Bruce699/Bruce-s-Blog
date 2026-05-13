@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We Still Call Them "Pages" — Ando Blog</title>
+  <style>
+    @font-face {
+      font-family: "TWK Lausanne";
+      src: url("./fonts/TWKLausanne-300.otf") format("opentype"),
+           url("./fonts/TWKLausanne-300.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "TWK Lausanne";
+      src: url("./fonts/TWKLausanne-400.otf") format("opentype"),
+           url("./fonts/TWKLausanne-400.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: "TWK Lausanne", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 300;
+      background-color: #f8f8f8;
+      color: #1f1f1f;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      background-color: #f8f8f8;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .content {
+      width: calc(498 / 1512 * 100vw);
+      min-width: 320px;
+      max-width: 680px;
+      margin: 0 auto;
+      padding-top: 70px;
+      padding-bottom: 120px;
+    }
+
+    .article-title {
+      font-size: 20px;
+      font-weight: 400;
+      color: #1f1f1f;
+      line-height: 20px;
+      margin-bottom: 30px;
+    }
+
+    .cover {
+      width: 100%;
+      height: calc(262 / 982 * 100vh);
+      background-color: #000;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .byline {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+
+    .byline-author {
+      color: #FC5F2B;
+    }
+
+    .byline-date {
+      color: #CECECE;
+    }
+
+    .body {
+      margin-top: 32px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      color: #5F5F5F;
+    }
+
+    .body p {
+      margin-bottom: 28px;
+    }
+
+    .body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .body h2 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #1f1f1f;
+      margin-top: 48px;
+      margin-bottom: 20px;
+    }
+
+    .section-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .inspiration-list {
+      list-style: none;
+      padding: 0;
+      opacity: 0.8;
+    }
+
+    .inspiration-list li {
+      line-height: 28px;
+      margin-bottom: 4px;
+      padding-left: 12px;
+      position: relative;
+    }
+
+    .inspiration-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #5F5F5F;
+    }
+
+    .inspiration-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .inspiration-list a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: rgba(95, 95, 95, 0.4);
+      text-underline-offset: 3px;
+      transition: color 0.15s, text-decoration-color 0.15s;
+    }
+
+    .inspiration-list a:hover {
+      color: #FC5F2B;
+      text-decoration-color: #FC5F2B;
+    }
+
+    .bottom-fade {
+      position: fixed;
+      bottom: -80px;
+      left: 0;
+      width: 100vw;
+      height: 300px;
+      background: linear-gradient(to top, #f8f8f8 40%, transparent 100%);
+      pointer-events: none;
+      z-index: 9;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="content">
+
+      <div class="article-title">We Still Call Them &#8220;Pages&#8221;</div>
+
+      <div class="cover">
+        <img src="./images/Cover%201.png" alt="" />
+      </div>
+
+      <div class="byline">
+        <span class="byline-author">Bruce Cao</span>
+        <span class="byline-date">May 13th, 2026</span>
+      </div>
+
+      <div class="body">
+
+        <p>When my parents say &#8220;roll down the window,&#8221; they&#8217;re referring to a motion that no longer exists.</p>
+
+        <p>Older cars literally had handles you rotated to lower the glass. My generation just presses a button. No rolling involved. But the language stayed anyway.</p>
+
+        <p>I think &#8220;web pages&#8221; are heading toward the same fate.</p>
+
+        <p>A few years from now, some kid is probably going to ask why we still call them pages at all. Pages of what? There&#8217;s nothing to flip through. No paper. No fixed surface. The internet doesn&#8217;t even really behave like a book anymore.</p>
+
+        <p>But language evolves slower than behavior. And right now, behavior around the internet is changing very, very fast.</p>
+
+        <p>I realized this sometime earlier this semester when I downloaded Dia by The Browser Company.</p>
+
+        <p>I expected another AI browser demo. Maybe slightly smarter tabs. Slightly better search. Some floating sidebar trying very hard to look futuristic.</p>
+
+        <p>Instead, I accidentally stopped using Google.</p>
+
+        <p>Not dramatically. Not in a &#8220;the future is here&#8221; type of way. It was weirdly casual. One afternoon later, I realized I hadn&#8217;t opened Google once.</p>
+
+        <p>That scared me a little.</p>
+
+        <p>Not because Dia was perfect. It definitely wasn&#8217;t. But because the transition felt frictionless. I always assumed changing search behavior would feel difficult, like switching religions or permanently moving to another country. Instead, it felt more like accidentally starting to use AirDrop every day. One useful moment turns into habit faster than you realize.</p>
+
+        <p>And I don&#8217;t think this shift is really about chatbots.</p>
+
+        <p>I think browsing itself is starting to become delegation.</p>
+
+        <p>For most of the internet&#8217;s history, the browser has been a place you manually navigated. You searched. Compared tabs. Opened reviews. Cross-checked information. Bookmarked things. Built little systems for yourself. The browser was less like an assistant and more like a giant desk covered in papers.</p>
+
+        <p>Now something stranger is happening.</p>
+
+        <p>Instead of navigating information ourselves, we&#8217;re increasingly asking systems to navigate on our behalf.</p>
+
+        <p>At first, this looks small.</p>
+
+        <p>&#8220;Find me a good Japanese restaurant nearby.&#8221;</p>
+
+        <p>Then:<br>&#8220;Compare these cameras.&#8221;</p>
+
+        <p>Then:<br>&#8220;Book the cheapest flight that doesn&#8217;t ruin my life.&#8221;</p>
+
+        <p>Eventually:<br>&#8220;Handle it.&#8221;</p>
+
+        <p>That last step is the important one.</p>
+
+        <p>Because once software starts acting on your behalf instead of merely showing information, the browser stops behaving like a browser. It starts behaving more like an operating system for intent.</p>
+
+        <p>That sounds like a very Silicon Valley sentence, but I think the behavioral shift underneath it is real.</p>
+
+        <p>You can already see it happening in tiny ways. People ask ChatGPT questions they used to Google. They paste emails into Claude before replying. They use Perplexity instead of opening twelve Reddit tabs. They ask AI tools to summarize articles they technically could have read themselves.</p>
+
+        <p>The interface is slowly shifting from:<br>search &#8594; browse &#8594; decide</p>
+
+        <p>to:<br>ask &#8594; trust &#8594; delegate.</p>
+
+        <p>The scary part is how quickly people adapt once the interaction becomes intuitive enough.</p>
+
+        <p>During my internship at a startup building an agentic browser, one thing I kept hearing internally was that old assumptions about user behavior might no longer apply. The common wisdom in tech has always been that changing habits is incredibly difficult. But then suddenly you watch people who barely trusted cloud storage five years ago using ChatGPT as a life advisor.</p>
+
+        <p>Even older users adapt surprisingly fast once the friction disappears.</p>
+
+        <p>That realization changed how I thought about the browser entirely.</p>
+
+        <img src="./images/Car%20Window%20Roller.jpg" alt="" class="section-image" />
+
+        <h2>Browsers Begin to Resemble Desks</h2>
+
+        <p>I used to think the future browser would mainly be &#8220;smarter.&#8221; Now I think it might become deeply personal.</p>
+
+        <p>Not personalized in the annoying &#8220;recommended for you&#8221; sense. More like how different people organize their physical desks.</p>
+
+        <p>Some people have perfectly clean setups. One laptop in the center. Maybe a notebook aligned at a ninety-degree angle like they&#8217;re preparing for a NASA launch. They know exactly what they&#8217;re there to do.</p>
+
+        <p>Their future browser probably looks minimal too. Maybe just a blank interface with a cursor waiting for instructions. Fast. Quiet. Invisible.</p>
+
+        <p>Other people work like raccoons.</p>
+
+        <p>Half-read books everywhere. Sticky notes. Seven tabs emotionally supporting them at all times. A game controller next to a water bottle next to an unopened email they&#8217;ve been avoiding for six days.</p>
+
+        <p>For them, the browser might feel more spatial and alive. Feeds. Visual task flows. Floating reminders. Research trails. Dynamic cards that evolve throughout the day. Less like a search engine and more like an externalized train of thought.</p>
+
+        <p>Both are browsers.</p>
+
+        <p>That&#8217;s the interesting part.</p>
+
+        <p>For the last twenty years, we mostly accepted the same interaction model for everyone: tabs, URLs, pages, search bars. But if AI systems become capable enough to adapt around human behavior instead of forcing humans to adapt around software, browsers may start reflecting personality more than technical preference.</p>
+
+        <p>Not everyone wants the same cognitive environment.</p>
+
+        <p>And once you start thinking about browsers this way, websites themselves begin to look different too.</p>
+
+        <img src="./images/Desktop%20Layout.png" alt="" class="section-image" />
+
+        <h2>Websites Become Infrastructure</h2>
+
+        <p>Right now, most websites still function as destinations. You intentionally go there. Airlines want you inside their ecosystem. Banks want you inside their apps. Brands carefully craft entire experiences around keeping you within their walls.</p>
+
+        <p>But I think this transition happens in stages.</p>
+
+        <p>At first, people still verify important decisions themselves. Even if AI helps compare flights, you probably still open the airline website before paying. Trust isn&#8217;t fully there yet.</p>
+
+        <p>This feels similar to the early days of digital payments. People were terrified to save card information online. Now most of us buy things with a thumbprint while walking down the street eating a sandwich.</p>
+
+        <p>As trust builds, more of the browsing process gets delegated.</p>
+
+        <p>Eventually, many websites may stop functioning primarily as human-facing destinations and start functioning more like infrastructure for agents. Machine-readable systems. APIs with branding attached. Places software visits more often than people do.</p>
+
+        <p>Ironically, this may make branding even more important.</p>
+
+        <p>Because when interfaces become increasingly standardized, people start craving personality again.</p>
+
+        <p>This happens constantly in culture. Highly polished systems eventually create demand for weirdness. Corporate feeds create indie communities. Perfect optimization creates nostalgia for imperfection.</p>
+
+        <p>I think the same thing will happen with AI-mediated browsing.</p>
+
+        <p>If every browser becomes equally good at handling tasks, competition shifts toward experience. Delight. Surprise. Taste.</p>
+
+        <p>The future browser probably won&#8217;t just decide what information to show you. It may also decide how brands appear to you.</p>
+
+        <p>That&#8217;s a huge shift.</p>
+
+        <p>Historically, brands controlled their own websites. Their own layouts. Their own interactions. Their own carefully crafted little digital worlds.</p>
+
+        <p>But if the browser layer increasingly mediates the experience, then brands start existing more like adaptive materials than fixed destinations. The browser may pull from TikToks, product databases, long-form articles, reviews, 3D assets, creator content, customer support history, and dynamically reconstruct experiences around user intent.</p>
+
+        <p>In that world, branding becomes less about controlling a page and more about creating memorable signals the system can reinterpret.</p>
+
+        <p>I can already imagine brands experimenting with this the same way architects design storefronts or giant LED billboards today. Maybe search results stop looking like lists and start behaving more like responsive scenes. Maybe brands create tiny interactive moments inside AI-generated interfaces. Fake depth effects. Motion. Personality. Humor. Little surprises embedded into otherwise efficient systems.</p>
+
+        <p>Because marketing has always been partially about working creatively within constraints.</p>
+
+        <p>And future designers will probably spend less time designing static screens and more time negotiating the balance between consistency and surprise.</p>
+
+        <p>Too much standardization becomes boring. Too much chaos becomes exhausting.</p>
+
+        <p>The browser companies that figure out this balance first will matter a lot.</p>
+
+        <p>Google obviously sees this coming too.</p>
+
+        <p>People love pretending every technological shift means Google dies tomorrow, but infrastructure advantages are very real. Gmail is already an identity layer for half the internet. Chrome is deeply embedded into modern browsing behavior. Even many experimental browsers still partially wrap around Google&#8217;s ecosystem because it&#8217;s simply practical.</p>
+
+        <p>But something important may still change.</p>
+
+        <p>Users might gradually stop seeing Google.</p>
+
+        <p>And invisibility is dangerous.</p>
+
+        <p>If agentic browsers increasingly handle search, comparison, summarization, and action before users ever reach traditional search pages, then Google risks becoming infrastructural rather than experiential. Still enormously powerful, but less culturally visible.</p>
+
+        <p>It&#8217;s similar to electricity. Critical infrastructure everywhere, yet emotionally absent most of the time.</p>
+
+        <img src="./images/Infrastructure.png" alt="" class="section-image" />
+
+        <h2>The Internet Gets Flattened. Then Weird Again.</h2>
+
+        <p>What fascinates me most is that nobody fully agrees on what this future should look like yet.</p>
+
+        <p>During my internship, I watched entire product visions change in real time. At one point, there was serious excitement around interfaces dynamically generating themselves around user intent. Then shortly before launch, leadership shifted directions completely.</p>
+
+        <p>People got stressed. Some left. Different teams held fundamentally different beliefs about what the future browser should become.</p>
+
+        <p>And honestly, that uncertainty made the whole thing feel more real.</p>
+
+        <p>Because beneath all the AI hype, what&#8217;s actually happening is that people are trying to negotiate a new interaction model for the internet itself.</p>
+
+        <p>Not just a new app.</p>
+
+        <p>A new relationship with information.</p>
+
+        <p>That&#8217;s why I don&#8217;t think the old browser disappears dramatically. No cinematic extinction event. No moment where everyone collectively closes their last tab and salutes.</p>
+
+        <p>It probably fades the same way physical libraries did.</p>
+
+        <p>Libraries still exist, obviously. They&#8217;re still valuable. But for most people, they stopped being the default interface to information.</p>
+
+        <p>The browser may follow a similar path. Not gone. Just transformed.</p>
+
+        <p>Maybe future generations will still say &#8220;open a page&#8221; the same way we still say &#8220;roll down the window.&#8221;</p>
+
+        <p>Even after the mechanics underneath have completely changed.</p>
+
+        <p>And honestly, we&#8217;ll probably keep calling them pages for a very long time.</p>
+
+        <img src="./images/Library.png" alt="" class="section-image" />
+
+        <p style="margin-top: 28px;">I&#8217;m inspired by</p>
+
+        <ul class="inspiration-list">
+          <li>Michael Riddering &amp; Marvin Schwaibold, <a href="https://www.youtube.com/watch?v=KpJs7mZYErg" target="_blank">Shopify&#8217;s Secret Design Weapon</a>, <a href="https://dive.club" target="_blank">Dive Club</a>, April 4, 2026</li>
+          <li>Michael Riddering &amp; Luis Ouriach, <a href="https://www.youtube.com/watch?v=Pn2G7JhxNKc&amp;t=3s" target="_blank">Agentic Design Systems</a>, <a href="https://dive.club" target="_blank">Dive Club</a>, March 10, 2026</li>
+          <li>Rauno Freiberg, <a href="http://devouringdetails.com/" target="_blank">Devouring Details</a></li>
+          <li>Molly Cantillon, <a href="https://docs.google.com/document/d/19-ajYTp2hwOW9WcirY9OIoSvMdfyivup8LMI92PkS20/edit?tab=t.0" target="_blank">The Personal Panopticon</a></li>
+          <li>Josh Miller, <a href="https://thebrowser.company/values" target="_blank">The Browser Company&#8217;s Values</a></li>
+          <li>Yingxuan Yang et al., <a href="https://arxiv.org/abs/2507.21206" target="_blank">Agentic Web: Weaving the Next Web with AI Agents</a></li>
+          <li>Mulong Xie &amp; Yang Xie, <a href="https://arxiv.org/abs/2603.21334" target="_blank">Human-Agent Interaction Layer</a></li>
+          <li>Ongoing personal observations using OpenAI&#8217;s <a href="https://chatgpt.com" target="_blank">ChatGPT</a>, <a href="https://www.perplexity.ai" target="_blank">Perplexity AI</a>, Anthropic&#8217;s <a href="https://claude.ai" target="_blank">Claude</a>, and The Browser Company&#8217;s <a href="https://thebrowser.company/dia" target="_blank">Dia</a></li>
+          <li>Conversations with colleagues and friends working across AI products, browsers, and media systems</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="bottom-fade"></div>
+  </div>
+</body>
+</html>
